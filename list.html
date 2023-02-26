@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+   <head>
+      <style>
+      #customers {
+        font-family: Arial,Tahoma, Verdana, sans-serif;
+        border-style:solid;
+        border-width: 5px;
+        text-align: center;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        
+      }
+		h1{text-align: center;}
+        div{text-align: center;}
+        h2{text-align: center;}
+        h3{text-align: center;}
+
+      </style>
+      </head>
+   <body>
+      <h1>ADVANCED DATABASE SYSTEM</h1>   
+       <h1>SREE GUTHIKONDA </h1> 
+         <h2> 1002027036 </h2> 
+         <h3> ASSIGNMENT-3</h3>
+         <br>
+      <div>
+         <a href="/"> HOME PAGE </a>
+      </div>   
+   <br> <br>
+      <br> <br>
+      <div>
+      <table id='customers'>
+         <tr>
+            <td><b>Time</b></td> 
+            <td><b>latitude</b></td>
+            <td><b>longitude</b></td> 
+            <td><b>depth</b></td>
+            <td><b>mag</b></td>
+            <td><b>magType</b></td>
+            <td><b>nst</b></td>
+            <td><b>gap</b></td>
+            <td><b>dmin</b></td>
+            <td><b>rms</b></td>
+            <td><b>net</b></td>
+            <td><b>id</b></td>
+            <td><b>updated</b></td>
+            <td><b>place</b></td>
+            <td><b>type</b></td>
+            <td><b>horizontalError</b></td>
+            <td><b>depthError</b></td>
+            <td><b>magError</b></td>
+            <td><b>magNst</b></td>
+            <td><b>locationSource</b></td>
+            <td><b>magSource</b></td>
+           
+         </tr>
+         {% for col in rows %}
+         <tr>
+            <td>{{col[0]}}</td>
+            <td>{{col[1]}}</td>
+            <td> {{col[2]}}</td>
+            <td>{{col[3]}}</td>
+            <td> {{col[4]}}</td>
+            <td>{{col[5]}}</td>
+            <td>{{col[6]}}</td>
+            <td>{{col[7]}}</td>
+            <td>{{col[8]}}</td>
+            <td>{{col[9]}}</td>
+            <td>{{col[10]}}</td>
+            <td>{{col[11]}}</td>
+            <td>{{col[12]}}</td>
+            <td>{{col[13]}}</td>
+            <td>{{col[14]}}</td>
+            <td>{{col[15]}}</td>
+            <td>{{col[16]}}</td>
+            <td>{{col[17]}}</td>
+            <td>{{col[18]}}</td>
+            <td>{{col[19]}}</td>
+            <td>{{col[20]}}</td>
+        </tr>
+         {% endfor %}
+      </table>
+</div>
+      <br>
+     
+   </body>
+</html>

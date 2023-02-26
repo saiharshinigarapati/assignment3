@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            div{text-align: center;}
+            #customers {
+        font-family: Arial,Tahoma, Verdana, sans-serif;
+        border-style:solid;
+        border-width: 5px;
+        text-align: center;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+      }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>ADVANCED DATABASE SYSTEM</h1>
+        <h1> SREE GUTHIKONDA</h1>
+        <h2> 1002027036</h2>
+        <h3>ASSIGNMENT-3</h3>
+        <div>   
+            <a href="/"> HOME PAGE</a>
+        </div>  
+		<br> <br>
+    <div>
+		<form method="POST" action="/res" >
+            N: <input type = "text" name = "N" />
+            
+            <input type = "submit" name = "notmatch"/>
+		 </form>
+         <table id='customers'>
+            <tr>
+               
+               <td><b>Time</b></td>
+               <td><b>latitude</b></td>
+               <td><b>longitude</b></td>
+               <td><b>mag</b></td>
+              
+            </tr>
+            {% for col in rows %}
+            <tr>
+               <td>{{col[0]}}</td>
+               <td>{{col[1]}}</td>
+               <td>{{col[2]}}</td>
+               <td>{{col[3]}}</td>
+               
+               
+           </tr>
+            {% endfor %}
+         </table>
+</html>
